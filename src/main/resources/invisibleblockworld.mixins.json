@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.kunmc.lab.invisibleblockworld.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "invisibleblockworld.refmap.json",
+  "mixins": [
+    "MixinBlockRendererDispatcher",
+    "MixinParticleManager"
+  ],
+  "minVersion": "0.8"
+}
