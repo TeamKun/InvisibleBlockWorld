@@ -71,7 +71,12 @@ public class InvisibleBlockWorld {
             return;
         }
 
-        Entity p = e.getEntity();
+        PlayerEntity p = ((PlayerEntity) e.getEntityLiving());
+
+        if (p.isSpectator()) {
+            return;
+        }
+
         BlockPos pos = p.getPosition();
         BlockPos downPos = pos.down();
 
@@ -98,7 +103,12 @@ public class InvisibleBlockWorld {
             return;
         }
 
-        Entity p = e.getEntity();
+        PlayerEntity p = ((PlayerEntity) e.getEntityLiving());
+
+        if (p.isSpectator()) {
+            return;
+        }
+
         BlockPos pos = p.getPosition();
         BlockPos downPos = pos.down();
 

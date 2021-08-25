@@ -37,7 +37,7 @@ description = '''
 
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.InvisibleBlockWorld]] #optional
+[[dependencies.invisibleblockworld]] #optional
 # the modid of the dependency
 modId = "forge" #mandatory
 # Does this dependency have to exist - if not, ordering below must be specified
